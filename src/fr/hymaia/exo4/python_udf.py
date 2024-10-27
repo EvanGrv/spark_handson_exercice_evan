@@ -8,7 +8,7 @@ def main():
 
     # Charger les données
     df = spark.read.csv(
-        "/Users/evan/PycharmProjects/spark-handson/src/resources/exo4/sell.csv",
+        "/Users/evan/PycharmProjects/spark-handson/src/resources/exo0/sell.csv",
         header=True,
         inferSchema=True,
     )

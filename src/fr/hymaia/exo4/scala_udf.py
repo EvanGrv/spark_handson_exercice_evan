@@ -18,14 +18,14 @@ def main():
         .master("local[*]")
         .config(
             "spark.jars",
-            "/Users/evan/PycharmProjects/spark-handson/src/resources/exo4/udf.jar",
+            "/Users/evan/PycharmProjects/spark-handson/src/resources/exo0/udf.jar",
         )
         .getOrCreate()
     )
 
     # Lecture des données
     df = spark.read.csv(
-        "/Users/evan/PycharmProjects/spark-handson/src/resources/exo4/sell.csv",
+        "/Users/evan/PycharmProjects/spark-handson/src/resources/exo0/sell.csv",
         header=True,
         inferSchema=True,
     )
